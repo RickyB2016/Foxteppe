@@ -53,7 +53,7 @@ public class Player_Movement : MonoBehaviour {
 
             onGround = false;
 
-            vSpeed = 8;
+            vSpeed = 8.4f;
 
             jumpCount--;
 
@@ -61,7 +61,7 @@ public class Player_Movement : MonoBehaviour {
 
         // Horizontal Movement
 
-        hSpeed = (airDashVel / 10) * Math.Sign(Input.GetAxisRaw("Horizontal"));
+        hSpeed = (airDashVel / 9.5f) * Math.Sign(Input.GetAxisRaw("Horizontal"));
 
         // Gravity
 
@@ -76,7 +76,7 @@ public class Player_Movement : MonoBehaviour {
         else
         {
 
-            vSpeed -= 0.4f;
+            vSpeed -= 0.3f;
 
             if (vSpeed < maxVspeed)
             {
@@ -94,13 +94,13 @@ public class Player_Movement : MonoBehaviour {
 
             vSpeed = 1;
 
-            airDashVel = 140;
+            airDashVel = 130;
 
             airDashCount--;
 
         }
 
-        if (airDashVel > 60)
+        if (airDashVel > 40)
         {
 
             airDashVel--;
@@ -123,7 +123,7 @@ public class Player_Movement : MonoBehaviour {
 
             airDashCount = maxAirDashCount;
 
-            airDashVel = 60;
+            airDashVel = 55;
 
         }
 
