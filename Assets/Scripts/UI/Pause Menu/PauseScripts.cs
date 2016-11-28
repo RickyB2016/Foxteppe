@@ -4,11 +4,18 @@ using UnityEngine.SceneManagement;
 public class PauseScripts : MonoBehaviour {
 
     public GameObject ui;
-
-	// Update is called once per frame
 	
-  void Update () {
-        if(Input.GetKeyDown(KeyCode.Escape))
+    void Awake ()
+    {
+
+        Toggle();
+
+    }
+
+    void Update ()
+    {
+
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
                 Toggle();
             
@@ -18,15 +25,18 @@ public class PauseScripts : MonoBehaviour {
 
     public void Toggle()
     {
+
         ui.SetActive(!ui.activeSelf);
+
         if (ui.activeSelf)
         {
             Time.timeScale = 0f;
-        }
-        else
+        } else
+
         {
             Time.timeScale = 1f;    
         }
+
     }
 
     public void Quit () 
@@ -35,7 +45,10 @@ public class PauseScripts : MonoBehaviour {
     }
 
     public void ReturnToMenu(){
+
+        GameObject.Find("PlayerCol").GetComponentInChildren<AudioListener>().enabled = false;
         SceneManager.LoadScene("Main Menu");
+        Destroy(GameObject.Find("PlayerCol"));
     }
 
 }

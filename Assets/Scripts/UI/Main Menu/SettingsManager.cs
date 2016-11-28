@@ -21,6 +21,8 @@ public class SettingsManager : MonoBehaviour {
     {
         gameSettings = new GameSettings();
 
+        //Error Occurs Here. MonoBehavious doesn't allow 'new' to be used in this scenario. 
+
         fullscreenToggle.onValueChanged.AddListener(delegate{ OnFullscreenToggle(); });
         resolutionDropdown.onValueChanged.AddListener(delegate{ OnResolutionChange(); });
         textureQualityDropdown.onValueChanged.AddListener(delegate{ OnTextureQualityChange(); });
