@@ -54,7 +54,7 @@ public class MenuScript : MonoBehaviour {
 
     public void StartLevel()
     {
-        SceneManager.LoadScene("TESTSCENE");
+        SceneManager.LoadScene("Shrine");
     }
 
     public void ExitGame()

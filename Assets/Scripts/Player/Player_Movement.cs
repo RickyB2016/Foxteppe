@@ -22,9 +22,11 @@ using System;
 
 public class Player_Movement : MonoBehaviour {
 
-    public static float vSpeed, maxVspeed = -7, jumpCount = 1, maxJumpCount = 1, maxAirDashCount = 1;
+    public float vSpeed, maxVspeed = -7, jumpCount = 1, maxJumpCount = 1, maxAirDashCount = 0;
 
-    public float hSpeed = 0, yVel, airDashCount = 1, airDashVel = 60;
+    public float hSpeed = 0, yVel, airDashCount = 1, airDashVel = 60, velocityY;
+
+    Vector2 prevFrame, currentFrame;
 
     Rigidbody2D rb;
 
@@ -109,6 +111,28 @@ public class Player_Movement : MonoBehaviour {
 
         yVel = rb.velocity.y;
 
+        //VERY IMPORTANT BUG FIXING FEATURE
+
+        if ((rb.velocity.y == -7) && !onGround){
+
+
+            currentFrame = transform.position;
+
+            if (currentFrame.y == prevFrame.y && rb.velocity.y == -7)
+            {
+
+                onGround = true;
+                jumpCount = maxJumpCount;
+
+
+            }
+
+        }
+
+        velocityY = rb.velocity.y;
+
+        prevFrame = transform.position;
+
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -127,6 +151,19 @@ public class Player_Movement : MonoBehaviour {
 
         }
 
+        if (col.name == "DJ_Upgrader")
+        {
+
+            maxJumpCount = 2;
+            Destroy(col.gameObject);
+
+        } if (col.name == "AD_Upgrader")
+        {
+
+            maxAirDashCount = 1;
+            Destroy(col.gameObject);
+
+        }
     }
 
     void OnTriggerStay2D(Collider2D stay)

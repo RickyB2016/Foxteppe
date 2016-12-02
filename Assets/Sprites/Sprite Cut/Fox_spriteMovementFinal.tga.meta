@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: 9202cac34e6ea9546ab5b95db15dc5de
+timeCreated: 1480550923
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Fox_spriteMovementFinal_1
+    21300002: Fox_spriteMovementFinal_2
+    21300004: Fox_spriteMovementFinal_3
+    21300006: Fox_spriteMovementFinal_4
+    21300008: Fox_spriteMovementFinal_5
+    21300010: Fox_spriteMovementFinal_6
+    21300012: Fox_spriteMovementFinal_7
+    21300014: Fox_spriteMovementFinal_8
+    21300016: Fox_spriteMovementFinal_9
+    21300018: Fox_spriteMovementFinal_10
+    21300020: Fox_spriteMovementFinal_11
+    21300022: Fox_spriteMovementFinal_12
+    21300024: Fox_spriteMovementFinal_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fox_spriteMovementFinal_3
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 3042
+        width: 780
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fox_spriteMovementFinal_4
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3070
+        width: 788
+        height: 351
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fox_spriteMovementFinal_5
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 3038
+        width: 784
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fox_spriteMovementFinal_7
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 2022
+        width: 840
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fox_spriteMovementFinal_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2020
+        width: 784
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fox_spriteMovementFinal_10
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 2054
+        width: 790
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fox_spriteMovementFinal_11
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 2024
+        width: 772
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Fox_spriteMovementFinal_0
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 3036
+        width: 794
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

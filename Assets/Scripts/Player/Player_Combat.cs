@@ -15,6 +15,13 @@ public class Player_Combat : MonoBehaviour {
 	
 	void Update () {
 	
+        if (HP > MAXHP)
+        {
+
+            HP = MAXHP;
+
+        }
+
 	}
 
     void OnTriggerEnter2D (Collider2D col)
@@ -27,10 +34,17 @@ public class Player_Combat : MonoBehaviour {
 
             //rb.velocity = new Vector2 (col.GetComponent<Damager>().knockback.x, col.GetComponent<Damager>().knockback.y);
 
-        } else if (col.tag == "MaxHPUp")
+        } else if (col.name == "HP_Upper")
         {
 
-            //MAXHP += col.GetComponent<Bonus>().hpInc;
+            MAXHP += 25;
+            HP = MAXHP;
+            Destroy(col.gameObject);
+
+        } else if (col.name == "HP_Recoverer")
+        {
+
+            HP += 10;
 
         }
 
